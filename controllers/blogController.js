@@ -54,7 +54,6 @@ const showList = async (req, res) => {
         { title: { [Op.substring]: `${title}` } },
         { '$Category.name$': { [Op.iLike]: `%${category}%` } },
         { '$Tags.name$': { [Op.iLike]: `%${tag}%` } }
-
       ]
     },
   });
