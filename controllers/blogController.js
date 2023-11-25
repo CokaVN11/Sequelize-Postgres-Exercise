@@ -57,8 +57,6 @@ const showList = async (req, res) => {
 
       ]
     },
-    limit: limit,
-    offset: offset,
   });
 
   res.render("index");
