@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 4000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 const expressHbs = require('express-handlebars');
 const { createPagination } = require('express-handlebars-paginate');
 
