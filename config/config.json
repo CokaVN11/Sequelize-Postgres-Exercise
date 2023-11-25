@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "tuan8db_jc0w_user",
+    "password": "YBVNhdZbcB28gCOpCnEYdl5nQxa0y9Rq",
+    "database": "tuan8db_jc0w",
+    "host": "dpg-clfb6vl8td7s73b8phs0-a.singapore-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
