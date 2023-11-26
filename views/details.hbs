@@ -34,11 +34,11 @@
             <div class="col-lg-6">
               <div class="blog__details__author">
                 <div class="blog__details__author__pic">
-                  <img src="/img/blog/details/details-author.jpg" alt="" />
+                  <img src="{{blog.User.imagePath}}" alt="" />
                 </div>
                 <div class="blog__details__author__text">
                   <h6>{{blog.User.firstName}} {{blog.User.lastName}}</h6>
-                  <span>Admin</span>
+                  <span>{{blog.User.role}}</span>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@
                   <li><span>Categories:</span> {{blog.Category.name}}</li>
                   <li><span>Tags:</span>
                     {{#each blog.Tags}}
-                    <a href="/blogs?tag={{lowerCase name}}">{{name}}</a>
+                    <a href="/blogs?tag={{id}}">{{name}}</a>
                     {{/each}}
                   </li>
                 </ul>

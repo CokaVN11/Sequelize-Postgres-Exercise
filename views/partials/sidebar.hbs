@@ -2,7 +2,7 @@
   <div class="blog__sidebar">
     <div class="blog__sidebar__search">
       <form action="/blogs" method="get">
-        <input type="text" placeholder="Search..." name="title" />
+        <input type="text" placeholder="Search..." name="keyword" required/>
         <button type="submit"><span class="icon_search"></span></button>
       </form>
     </div>
@@ -11,7 +11,7 @@
       <ul>
         <li><a href="/">All</a></li>
         {{#each categories}}
-        <li><a href="/blogs?category={{lowerCase name}}">{{name}} <span>({{blogCount}})</span></a></li>
+        <li><a href="/blogs?category={{id}}">{{name}} <span>({{blogCount}})</span></a></li>
         {{/each}}
       </ul>
     </div>
@@ -19,12 +19,9 @@
     <div class="blog__sidebar__item">
       <h4>Search By Tags</h4>
       <div class="blog__sidebar__item__tags">
-        <a href="/blogs?tag=Apple">Apple</a>
-        <a href="/blogs?tag=Beauty">Beauty</a>
-        <a href="/blogs?tag=Vegetables">Vegetables</a>
-        <a href="/blogs?tag=Fruit">Fruit</a>
-        <a href="/blogs?tag=Healthy_Food">Healthy Food</a>
-        <a href="/blogs?tag=Life_Style">Lifestyle</a>
+        {{#each tags}}
+        <a href="/blogs?tag={{id}}">{{name}}</a>
+        {{/each}}
       </div>
     </div>
   </div>

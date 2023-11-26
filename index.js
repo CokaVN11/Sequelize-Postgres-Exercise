@@ -22,9 +22,6 @@ app.engine('hbs', expressHbs.engine({
         day: "numeric"
       });
     },
-    lowerCase: (str) => {
-      return str.toLowerCase();
-    },
     createPagination
   }
 })

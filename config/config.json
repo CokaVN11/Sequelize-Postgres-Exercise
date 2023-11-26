@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "tuan8db_jc0w_user",
-    "password": "YBVNhdZbcB28gCOpCnEYdl5nQxa0y9Rq",
-    "database": "tuan8db_jc0w",
-    "host": "dpg-clfb6vl8td7s73b8phs0-a.singapore-postgres.render.com",
+    "username": "tuan8db_t5tw_user",
+    "password": "moLOduKP8aZuCuEaobKFj5PrbcXsvsZ2",
+    "database": "tuan8db_t5tw",
+    "host": "dpg-clhgb4t8td7s73bocfn0-a.singapore-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
@@ -20,10 +20,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "tuan8db_jc0w_user",
-    "password": "YBVNhdZbcB28gCOpCnEYdl5nQxa0y9Rq",
-    "database": "tuan8db_jc0w",
-    "host": "dpg-clfb6vl8td7s73b8phs0-a.singapore-postgres.render.com",
+    "username": "tuan8db_t5tw_user",
+    "password": "moLOduKP8aZuCuEaobKFj5PrbcXsvsZ2",
+    "database": "tuan8db_t5tw",
+    "host": "dpg-clhgb4t8td7s73bocfn0-a.singapore-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {

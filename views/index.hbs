@@ -32,7 +32,7 @@
               <div class="blog__item__text">
                 <ul>
                   <li><i class="fa fa-calendar-o"></i> {{showDate createdAt}}</li>
-                  <li><i class="fa fa-comment-o"></i> {{Comments.length}}</li>
+                  <li><i class="fa fa-comment-o"></i> {{commentCount}}</li>
                 </ul>
                 <h5><a href="/blogs/{{id}}">{{title}}</a></h5>
                 <p>{{summary}}
@@ -44,12 +44,11 @@
           </div>
           {{/each}}
           <div class="col-lg-12">
-            <div class="product__pagination blog__pagination">
-              <a href="#"><i class="fa fa-long-arrow-left"></i></a>
-              <a href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+            <div class="product__pagination blog__pagination ">
+              {{{createPagination pagination
+              leftText='<i class="fa fa-long-arrow-left"></i>'
+              rightText='<i class="fa fa-long-arrow-right"></i>'
+              }}}
             </div>
           </div>
         </div>
